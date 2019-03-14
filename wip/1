@@ -1,0 +1,26 @@
+#!/bin/bash
+
+:<<'END'
+
+ read a
+ cd /home/cases/Documents/Master1/ProgWeb/projet$a/
+ pwd
+ ls
+
+END
+
+
+
+function blah(){
+ read a;
+ cd /home/cases/Documents/Master1/ProgWeb/projet$a/;
+ pwd;
+};
+
+blah()
+
+
+
+
+
+# b="$( pwd )"

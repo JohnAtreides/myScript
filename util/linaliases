@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+echo "
+alias rootgauche='ssh -p 10010 root@localhost'
+alias rootmilieu='ssh -p 10020 root@localhost'
+alias rootdroit='ssh -p 10030 root@localhost'
+"
+
+alias rootgauche='ssh -p 10010 root@localhost'
+alias rootmilieu='ssh -p 10020 root@localhost'
+alias rootdroit='ssh -p 10030 root@localhost'

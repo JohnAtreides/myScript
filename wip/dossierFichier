@@ -1,0 +1,48 @@
+##### Script permettant de déplacer des documents .odt et .pdf dans le répertoire voulu #####
+#### Il faut obligatoirement passer deux paramètres (dossier source et dossier destination) lors du lancement du script #####
+
+#!/bin/bash
+##### Je vérifie qu'il y ai bien deux paramètres lors du lancement du script
+if [ $# -ne 2 ]
+then
+        echo "il faut obligatoirement mettre deux chemins\nun pour le chemin où se trouve les fichiers et un second pour la destination"
+fi
+source=$1                       ##### affectation des paramètres à des varaibles
+destination=$2
+
+##### Je vérifie que les deux paramètres sont bien des chemins
+if [ -d $source ] && [ -d $destination ]
+        then
+               echo "ok pour les deux"
+        else
+               echo "un des chemins n'est pas bon"
+fi
+
+cd $source        ##### Je me déplace dans le répertoire où se trouve les fichiers et sous-répertoires où se trouvent aussi des fichiers
+
+for i in `ls`        ##### Pour i compris dans la liste de fichiers et de répertoire
+
+do
+        if [[ $i = *.odt ]] || [[ $i = *.pdf ]]        ##### Si c'est un fichiers ayant l'extension .odt ou .pdf
+                then
+                        mv $i $destination/$i            ##### Je le copie dans le dossier de destination
+                       # echo "$i est un fichier"
+                else
+
+                if [ -d $i ]                                  ##### Sinon si c'est un répertoire
+                        then
+                                cd $i                         ##### Je me déplace dans le répertoire
+                                #echo "on est dans le répertoire $i"
+                                for j in `ls`                 ##### Je liste de nouveau le contenu
+                                do
+                                        if [[ $j = *.odt ]] || [[ $j = *.pdf ]]      ##### Puis je copie de nouveau le fichiers si c'est un fichier .odt ou .pdf
+                                               then
+                                                        mv $j $destination/$j
+
+                                                        echo "$j"
+                                        fi
+                                done
+                        cd ..            ##### Puis je reviens dans le répertoire précédent pour reprendre la liste des répertoires
+                fi
+        fi
+done

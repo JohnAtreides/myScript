@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#by Samuel Cases
+
+
+echo "$(date '+%D' | toilet -f term -F border --gay)"
+

@@ -5,3 +5,5 @@
 
 echo "$(date '+%D' | toilet -f term -F border --gay)"
 
+
+wget -qO - https://raw.githubusercontent.com/JohnAtreides/myScript/master/util/Hello

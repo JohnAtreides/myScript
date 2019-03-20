@@ -1,0 +1,2 @@
+cd /usr/share/cowsay/cows 
+for line in $(ls .); do cat "$line" ; done

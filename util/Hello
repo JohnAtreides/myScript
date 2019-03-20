@@ -1,4 +1,5 @@
 
+echo "$(date '+%D' | toilet -f term -F border --gay)"
 
 Coucou !! 
 

@@ -1,0 +1,20 @@
+supprimer ce qu'il y a dans les parenthèses (et les parenthèses) :
+sed s/\(.*\)//g
+
+remplacer chaine 1 par chaine 2 :
+sed -i -e "s/chaines1/chaine2/g" fichier 
+
+
+
+
+rajouter "qq chose" en fin de ligne :
+sed -e 's/.*/& '"qq chose"'/' 
+	
+faire un saut à la ligne (\n) entre chaque ligne :
+sed -e 's/.*/& '"\n"'/' 2 > 3
+
+
+rm 
+
+
+sed -i 's/[a−zA−Z].∗=[1-9].*/\1/' toto

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+alias maj='/home/flo/Documents/myScript/util/maj.sh'
+alias dat='/home/flo/Documents/myScript/util/dat.sh'
+alias soub='source .bashrc'
+alias chut='/home/flo/Documents/myScript/util/shtd.sh'
+alias sam='wget -qO - https://raw.githubusercontent.com/JohnAtreides/myScript/master/util/Hello'
+alias sexe='sudo apt-get install'
+alias sali='sudo nano ~/.bash_aliases'

@@ -9,6 +9,14 @@
 
 END
 
+#for AA
+#cd /amuhome/c14014169/
+
+for LINE in [[ awk '/[0-9]$/ { print }' 2 ]],
+	do
+		(( cat 2 | sed "/$LINE/" ))
+	done
+ 
 
 
 function blah(){

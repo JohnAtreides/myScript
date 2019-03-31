@@ -5,21 +5,27 @@ sudo apt-get upgrade -y
 
 cd ~
 
-# wget le bash_aliases
+# wget bash_aliases
 sudo wget -qO - https://raw.githubusercontent.com/JohnAtreides/myScript/master/baliases.txt > aa11
 sudo cp aa11 .bash_aliases
 sudo rm -rf aa11
 source .bashrc
 
-# fortune et cowsay
-sexe cowsay fortunes fortunes-fr -y
+# fortune et cowsay et strfile
+sudo atp-get install libfortune-perl -y
+sudo atp-get install cowsay -y
+sudo atp-get install fortunes -y
+sudo atp-get install fortunes-fr -y
 sudo apt-get update
 
 #get H2G2 quotes, make the .dat, put it in the right path
-sudo wget -qO -https://raw.githubusercontent.com/JohnAtreides/myScript/master/util/H2G2.txt > bb22
+sudo wget -qO - https://raw.githubusercontent.com/JohnAtreides/myScript/master/util/H2G2.txt > bb22
 sudo cp bb22 H2G2
 sudo strfile H2G2
 sudo rm -rf bb22
 
 cp H2G2 /usr/share/games/fortunes/fr
 cp H2G2.dat /usr/share/games/fortunes/fr
+
+echo " C'est fini :D
+Et si tu essayais : \" meuh \" !!! "

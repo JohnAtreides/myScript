@@ -27,5 +27,15 @@ sudo rm -rf bb22
 cp H2G2 /usr/share/games/fortunes/fr
 cp H2G2.dat /usr/share/games/fortunes/fr
 
-echo " C'est fini :D
-Et si tu essayais : \" meuh \" !!! "
+echo " 
+
+\\
+ \\
+  \\
+   \\
+    LL ===>       C'est fini :D
+             Et si tu essayais : \" meuh \" !!! " \n
+source .bashrc
+
+echo "
+si marche pas, tape \"source .bahrc\" d'abord "

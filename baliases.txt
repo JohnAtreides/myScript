@@ -11,6 +11,7 @@ alias soub='source .bashrc'
 alias sali='sudo nano ~/.bash_aliases'
 
 alias dat='/home/flo/Documents/myScript/util/dat.sh'
+alias meuh='fortune H2G2 | cowsay'
 
 #alias chut='/home/flo/Documents/myScript/util/shtd.sh'
 

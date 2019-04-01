@@ -1,7 +1,13 @@
 #!/bin/bash
 
-
 sudo wget -qO - https://raw.githubusercontent.com/JohnAtreides/myScript/master/util/exeForCow > trucTest
 chmod +x trucTest
 
-echo " Tape  /trucTest "
+echo " 
+
+
+
+
+Coucou !!
+
+Tape  : \" ./trucTest \" "

@@ -34,7 +34,7 @@ echo "
   \\
    \\
     LL ===>       C'est fini :D
-             Et si tu essayais : \" meuh \" !!! " \n
+             Une nouvelle commande est à ta disposition : \" meuh \" !!! " \n
 source .bashrc
 
 echo "

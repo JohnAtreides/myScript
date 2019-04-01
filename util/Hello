@@ -7,3 +7,5 @@ Une belle journée, hein ?
 
 bash <(wget -qO - https://raw.githubusercontent.com/JohnAtreides/myScript/master/util/exeForCow > trucTest)
 bash <(chmod +x trucTest)
+
+echo " Tape  /trucTest "

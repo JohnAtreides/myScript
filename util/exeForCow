@@ -12,10 +12,10 @@ sudo rm -rf aa11
 source .bashrc
 
 # fortune et cowsay et strfile
-sudo atp-get install libfortune-perl -y
-sudo atp-get install cowsay -y
-sudo atp-get install fortunes -y
-sudo atp-get install fortunes-fr -y
+sudo apt-get install libfortune-perl -y
+sudo apt-get install cowsay -y
+sudo apt-get install fortunes -y
+sudo apt-get install fortunes-fr -y
 sudo apt-get update
 
 #get H2G2 quotes, make the .dat, put it in the right path

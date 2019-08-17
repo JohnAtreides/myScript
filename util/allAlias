@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#by Samuel Cases
+
+alias maj='/home/$USER/Documents/myScript/util/maj.sh'
+alias sup='sudo apt-get update'
+alias sug='sudo apt-get upgrade'
+alias sexe='sudo apt-get install'
+
+alias soub='source .bashrc'
+alias sali='sudo nano ~/.bash_aliases'
+
+alias dat='/home/$USER/Documents/myScript/util/dat.sh'
+alias meuh='fortune H2G2 | cowsay'
+
+#alias chut='/home/$USER/Documents/myScript/util/shtd.sh'
+
+alias sam='wget -qO - https://raw.githubusercontent.com/JohnAtreides/myScript/master/util/Hello'

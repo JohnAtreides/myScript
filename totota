@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#by Samuel Cases
+
+pwd > 1pwd
+cat 1pwd
+
+cd ..
+pwd > 1pwd
+cat 1pwd
+
+cd $USER
+pwd > 1pwd
+cat 1pwd

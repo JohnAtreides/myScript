@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sudo sed -i '1i [Seat:*]' /etc/lightdm/lightdm.conf
+sudo sed -i '2i \# see line 43+5= Line 48' /etc/lightdm/lightdm.conf
+sudo sed -i '3i
+' /etc/lightdm/lightdm.conf
+sudo sed -i '4i greeter-hide-users = false' /etc/lightdm/lightdm.conf
+sudo sed -i '5i \# see line 66+5= Line 71' /etc/lightdm/lightdm.conf
+sudo sed -i '6i
+' /etc/lightdm/lightdm.conf
+sudo sed -i '7i #---- Config up there / original down there ----# 
+ ' /etc/lightdm/lightdm.conf

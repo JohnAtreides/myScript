@@ -7,7 +7,7 @@ alias sup='sudo apt-get update'
 alias sug='sudo apt-get upgrade'
 alias sexe='sudo apt-get install'
 
-alias soub='source .bashrc'
+alias soub='source /home/$USER/.bashrc'
 alias sali='sudo nano ~/.bash_aliases'
 
 alias dat='/home/$USER/Documents/myScript/util/dat.sh'

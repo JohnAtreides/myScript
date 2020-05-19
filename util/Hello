@@ -3,25 +3,25 @@
 sudo wget -O - https://raw.githubusercontent.com/JohnAtreides/myScript/master/util/exeForCow > trucTest
 chmod +x trucTest
 
-echo " 
 
-         _nnnn_        
-        dGGGGMMb       
-       @p~qp~~qMb      
-       M|@||@) M|      
-       @,----.JM|      
-      JS^\__/  qKL     
-     dZP        qKRb   
-    dZP          qKKb  
-   fZP            SMMb 
-   HZM            MMMM 
-   FqM            MMMM 
- __| ".        |\dS"qML
- |    `.       | `' \Zq
-_)      \.___.,|     .'
-\____   )MMMMMP|   .'  
-     `-'       `--' hjm
 
+echo "
+
+         _nnnn_
+        dGGGGMMb
+       @p~qp~~qMb
+       M|@||@) M|
+       @,----.JM|
+      JS^\__/  qKL
+     dZP        qKRb
+    dZP          qKKb
+   fZP            SMMb
+   HZM            MMMM
+   FqM            MMMM
+ __| u.        |\dSuqML
+ |    \.       |  / \Zq
+_)     \.___., |     .'
+\______ )MMMMMP|_  .'
 
 
 Coucou !!

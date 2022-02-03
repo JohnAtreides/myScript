@@ -1,0 +1,36 @@
+version: '3'
+services:
+  gitlab:
+    container_name: "gitlab"
+    image: gitlab/gitlab-ce:latest
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+      - "8822:22"
+    hostname: "gitlab.example.com"
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        gitlab_rails['gitlab_shell_ssh_port'] = 8822
+    volumes:
+      - "/srv/gitlab/config:/etc/gitlab"
+      - "/srv/gitlab/logs:/var/log/gitlab"
+      - "/srv/gitlab/data:/var/opt/gitlab"
+    networks:
+      - gitlab-tier
+
+  runner:
+    container_name: "runner"
+    image: gitlab/gitlab-runner:alpine
+    restart: unless-stopped
+    depends_on:
+      - gitlab
+    links:
+      - gitlab
+    volumes:
+      - "/srv/runner/config:/etc/gitlab-runner"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    networks:
+      - gitlab-tier
+
+networks:
+  gitlab-tier:
